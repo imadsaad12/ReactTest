@@ -9,7 +9,7 @@ const INITIAL={
     age:""
 }
 const Home = () => {
-  // use state is used to save some data to use them later in this
+  // useState is used to save some data to use them later in this
   //app we use them to save each user data and to save the array of users
 
     const [input, setinput] = useState(INITIAL);
