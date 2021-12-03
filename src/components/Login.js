@@ -7,9 +7,13 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const submit = () => {
+    //only the user with this username and passwod will be redirected to the next page 
     if (name === "user" && password === "123456") {
+
         window.location.href = "/home"
     } else {
+      //we use set authed and set authed to print the message if it is not authorized
+
       setAuthed(1);
     }
   };
@@ -39,6 +43,7 @@ const Login = () => {
         <Button type="submit" onClick={submit}>
           Submit
         </Button>
+        {/*this is called ternary operater its same as if else so if condition is true it will print the message else it willl do nothing*/}
         {(authed===1) ? (
             <h5 style={{color:"red"}}>Not Authorized</h5>
         

@@ -4,6 +4,8 @@ import {Route,Routes,BrowserRouter} from "react-router-dom"
 import Login from './components/Login';
 import Home from './components/Home';
 
+
+// here we are configuring the routes which means that for every route which component will render
 function App() {
   return (
     <BrowserRouter>
